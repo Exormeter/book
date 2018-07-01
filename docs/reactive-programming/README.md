@@ -236,7 +236,7 @@ um diesen auszuwerten. Das Ware Potential von RxJS und anderen reaktiven Bibliot
 auf den Stream angewendet werden können.
 
 Nehmen wir das Klickevent Beispiel von oben: Die Aufgabe soll es sein, die Anzahl der Klicks auf den Button zu zählen. Aber anstatt die
-komplette Logik in die `subscribe()` zu packen, können wir uns einer Vielzahl an Operatoren bedienen, welche den Stream manipulieren. 
+komplette Logik in die `subscribe()` zu packen, kann auf eine Vielzahl an Operatoren zurückgegriffen werden, welche den Stream manipulieren. 
 Zunächst sollen alle Events, die auf dem Stream passieren auf einen neuen Wert abgebildet werden. Dazu kann der `map()` Operator genutzt werden:
 
 ```
@@ -517,7 +517,7 @@ Nutzer:  ---Click------Click----Click------Click---->
 
 sink$:   -----x----------x--------x----------x------>  
 
-Der Nutzer klickt auf die CheckBox, was bei jedem Klick ein `Change` Event hervorruft. Der sink$ Stream emittet mit jedem Klick auf die
+Der Nutzer klickt auf die CheckBox, was bei jedem Klick ein `change` Event hervorruft. Der sink$ Stream emittet mit jedem Klick auf die
 Checkbox nun ein komplettes Event. Da für die Anwendung nur der mit dem Event assoziierte Wert von Bedeutung ist, muss der Stream mit dem
 `map()` Operator manipuliert werden. 
 
